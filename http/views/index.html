@@ -1,0 +1,32 @@
+{{define "content"}}
+
+<form action="/lista" method="POST">
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" required name="email">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="password" required name="password">
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="name" required name="name">
+      </div>
+      <div class="mb-3">
+        <label for="surname" class="form-label">surname</label>
+        <input type="text" class="form-control" id="surname" placeholder="surname" required name="surname">
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">phone</label>
+        <input type="number" class="form-control" id="phone" placeholder="phone" required name="phone">
+      </div>
+      <div class="mb-3">
+        <label for="main" class="form-label">admin</label>
+        <input type="checkbox" id="admin" placeholder="admin" name="admin">
+      </div>
+
+      <button type="submit" id="button" name="botton">conferma</button>
+</form>
+
+{{end}}
